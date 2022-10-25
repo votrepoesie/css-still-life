@@ -1,7 +1,6 @@
 <style>
   
   body {
-/*     background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,18 +9,35 @@
   }
   
   .frame {
-/*     background: powderblue; */
     width: 500px;
     height: 500px;
-    border: 2px solid black;
-/*     padding: 20px 10px 20px 10px;  */
-/*     clockwise order */
-/*     margin: 0px auto; */
-/*     can have 4 values as well */
-/*     auto splits remainder value into half, 
-       only works for left and right */
+    border: 1px solid black;
   }
 
+  .coffee {
+    width: 150px;
+    height: 180px;
+    background-color: hsl(48, 100%, 50%);
+  }
+  
+  .red-border {
+    height: 33%;
+    background-color: rgb(186, 0, 0);
+/*     transform: translate(0px, 95px); */
+    position: static;
+    
+  }
+  
+  .text {
+    padding-top: 15px;
+    font-size: 30;
+  }
+  
 </style>
 
-<body><div class="frame"></div></body>
+<div class="frame">
+  <div class="coffee">
+    <div class="text">CAFE [] BUSTELO</div>
+    <div class="red-border"></div>
+  </div>
+</div>
