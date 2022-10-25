@@ -18,14 +18,17 @@
     width: 150px;
     height: 180px;
     background-color: hsl(48, 100%, 50%);
+    position: relative;
+    transform: translate(70px, 100px);
   }
   
   .red-border {
     height: 33%;
+    width: 100%;
     background-color: rgb(186, 0, 0);
 /*     transform: translate(0px, 95px); */
-    position: static;
-    
+    position: absolute;   /* fixed (cool for web menu), absolute, relative */
+    bottom: 5px;
   }
   
   .text {
