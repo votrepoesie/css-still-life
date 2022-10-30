@@ -28,8 +28,7 @@
     height: 33%;
     width: 100%;
     background-color: rgb(186, 0, 0);
-/*     transform: translate(0px, 95px); */
-    position: absolute;   /* fixed (cool for web menu), absolute, relative */
+    position: absolute; 
     bottom: 5px;
   }
   
@@ -46,7 +45,7 @@
     height: 60px;
     background-color: white;
     position: absolute;
-    transform: translate(90px, -253px);
+    transform: translate(90px, -258px);
     border-radius: 5px;
   }
   
@@ -54,14 +53,24 @@
     background-color: white;
 /*     clip-path: polygon(35% 0, 59% 49%, 33% 100%, 0% 100%, 25% 50%, 0% 0%); */
 /*     clip-path: polygon(35% 0, 65% 24%, 65% 70%, 35% 100%, 0 100%, 37% 68%, 37% 27%, 0 0); */
-    border: 1px solid;
-    border-color: rgba(34,36,195,1);
+    border: 1px solid rgba(34,36,195,1);
     width: 30px;
-    height: 30px;
+    height: 35px;
     position: relative;
     left: 60px;
-    top: 15px;
-    clip-path: polygon(0 0, 64% 11%, 66% 78%, 0 100%, 0 74%, 43% 63%, 43% 29%, 0 22%);
+    top: 10px;
+    clip-path: polygon(0 0, 18% 9%, 31% 26%, 32% 69%, 24% 86%, 0 100%, 0 80%, 14% 70%, 13% 31%, 0 18%);
+/*     clip-path: polygon(0 0, 64% 11%, 66% 78%, 0 100%, 0 74%, 43% 63%, 43% 29%, 0 22%); */
+  }
+  
+  .cup-bottom{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    position: relative;
+    top: 23px;
+    left: 3px;
+    border: 1px solid rgba(34,36,195,1)
   }
   
   .coffee-2 {
@@ -78,8 +87,7 @@
     height: 33%;
     width: 100%;
     background-color: rgb(186, 0, 0);
-/*     transform: translate(0px, 95px); */
-    position: absolute;   /* fixed (cool for web menu), absolute, relative */
+    position: absolute;  
     bottom: 5px;
   }
   
@@ -108,6 +116,7 @@
     left: 185px;
     bottom: 80px;
     border-radius: 10px;
+    border: solid black 0.5px;
     clip-path: polygon(50% 0%, 82% 0, 95% 44%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 6% 45%, 19% 0);
   }
   
@@ -140,12 +149,30 @@
     transform: scale(1,0.5);
     border-radius: 200px 200px 0 0;
     background-color: hsl(26, 100%, 50%);
-    border: solid hsl(13, 72%, 23%);
+    border: solid hsl(13, 72%, 23%) 0.7px;
   }
   
-  .top{
-    
+  .handle-3{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(33, 0, 0);
+    position: relative;
+    bottom: 676px;
+    left: 260px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    border-radius: 5px;
   }
+  
+  .mouth{
+    height: 35px;
+    width: 30px;
+    background-color: hsl(26, 100%, 50%);
+    position: relative;
+   	bottom: 625px;
+    left: 350px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+  }
+  
 /*   
   .stripe-1 {
     position: relative;
@@ -191,6 +218,7 @@
 <!--     <div class="stripe-2"></div> -->
 <!--     <div class="stripe-3"></div> -->
     <div class="handle"></div>
+    <div class="cup-bottom"></div>
   </div>
   
 <!--   THE POT -->
@@ -199,6 +227,7 @@
   <div class="handle-1"></div>
   <div class="handle-2"></div>
   <div class="lid"></div> 
-  <div class="top"></div>
+  <div class="handle-3"></div>
+  <div class="mouth"></div>
   
 </div>
