@@ -52,11 +52,20 @@
     filter: blur(0.7px);
   }
   
+/*   trying to overlay a shadow, fingers crossed */
+  .alpha-shadow {
+    background: linear-gradient(to right, rgba(34, 36, 158, 0.7), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(34, 36, 158, 0.7));
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 5px;
+  }
+  
   .handle {
     background-color: white;
 /*     clip-path: polygon(35% 0, 59% 49%, 33% 100%, 0% 100%, 25% 50%, 0% 0%); */
 /*     clip-path: polygon(35% 0, 65% 24%, 65% 70%, 35% 100%, 0 100%, 37% 68%, 37% 27%, 0 0); */
-    border: 1px solid rgba(34,36,195,1);
+    border: 1px solid rgb(34, 36, 158);
     width: 30px;
     height: 35px;
     position: relative;
@@ -64,6 +73,15 @@
     top: 10px;
     clip-path: polygon(0 0, 18% 9%, 31% 26%, 32% 69%, 24% 86%, 0 100%, 0 80%, 14% 70%, 13% 31%, 0 18%);
 /*     clip-path: polygon(0 0, 64% 11%, 66% 78%, 0 100%, 0 74%, 43% 63%, 43% 29%, 0 22%); */
+  }
+  
+  .alpha-handle {
+    background: linear-gradient(to right, rgba(34, 36, 158, 0.7), white 30%);
+/*     border: 1px solid rgba(34,36,195,1); */
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    clip-path: polygon(0 0, 18% 9%, 31% 26%, 32% 69%, 24% 86%, 0 100%, 0 80%, 14% 70%, 13% 31%, 0 18%);
   }
   
   .cup-bottom{
@@ -74,6 +92,10 @@
     top: 23px;
     left: 3px;
     border: 1px solid rgba(34,36,195,1)
+  }
+  
+  .alpha-cup-bottom {
+    
   }
   
   .coffee-2 {
@@ -208,30 +230,6 @@
     clip-path: polygon(0 0, 0% 100%, 100% 0);
   }
   
-/*   
-  .stripe-1 {
-    position: relative;
-    height: 10px;
-    background-color: blue;
-    top: 0px;
-  }
-  
-  .stripe-2 {
-    position: relative;
-    height: 10px;
-    background-color: blue;
-    top: 8px;
-  }
-  
-  .stripe-3 {
-    position: relative;
-    height: 10px;
-    background-color: blue;
-    top: 16px;
-  } */
-/*   use gradient */
-/*  clip-path:generator */
-  
 </style>
 
 <div class="frame">
@@ -249,11 +247,17 @@
   
 <!--   TINY CUP -->
   <div class="cup">
-<!--     <div class="stripe-1"></div> -->
-<!--     <div class="stripe-2"></div> -->
-<!--     <div class="stripe-3"></div> -->
-    <div class="handle"></div>
-    <div class="cup-bottom"></div>
+    
+    <div class="alpha-shadow"></div>
+    
+    <div class="handle">
+      <div class="alpha-handle"></div>
+    </div>
+    
+    <div class="cup-bottom">
+      <div class="alpha-cup-bottom"></div>
+    </div>
+    
   </div>
   
 <!--   THE POT -->
