@@ -25,6 +25,14 @@
     filter: blur(0.7px);
   }
   
+  .coffee-highlight {
+    width: 150px;
+    height: 180px;
+    background-image: linear-gradient(to right, rgba(254, 207, 64, 0.2) 15%, rgba(255, 255, 255, 0.3) 30%, rgba(254, 207, 64, 0) 40%);
+    position: absolute;
+    border-radius: 5px;
+  }
+  
   .red-border {
     height: 33%;
     width: 100%;
@@ -36,6 +44,14 @@
   .text {
     padding-top: 15px;
     font-size: 30;
+    color: rgb(0, 0, 81);
+  }
+  
+  .small-text {
+    font-size: 12;
+    position: absolute;
+    top: 88px;
+    left: 10px;
     color: rgb(0, 0, 81);
   }
   
@@ -53,7 +69,7 @@
   }
   
   .alpha-shadow {
-    background: linear-gradient(to right, rgba(34, 36, 158, 0.7), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(34, 36, 158, 0.7));
+    background: linear-gradient(to right, rgba(46, 46, 51, 0.5), rgba(255,255,255,0.3) 30%, rgba(0,0,0,0) 70%, rgba(99, 94, 87, 0.5));
     width: 60px;
     height: 60px;
     position: absolute;
@@ -83,7 +99,7 @@
     clip-path: polygon(0 0, 18% 9%, 31% 26%, 32% 69%, 24% 86%, 0 100%, 0 80%, 14% 70%, 13% 31%, 0 18%);
   }
   
-  .cup-bottom{
+  .cup-bottom {
     width: 50px;
     height: 5px;
     background-color: white;
@@ -112,6 +128,14 @@
     filter: blur(0.7px);
   }
   
+  .coffee2-highlight {
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    z-index: 100;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 90%, rgba(212, 255, 241, 0.8))
+  }
+    
   .red-border-2 {
     height: 33%;
     width: 100%;
@@ -163,14 +187,14 @@
   }
   
   .handle-2{
-    height: 130px;
+    height: 135px;
     width: 100px;
     background-color: black;
     position: relative;
     left: 78px;
-    bottom: 357px;
+    bottom: 357.5px;
     filter: blur(2px);
-    clip-path: polygon(66% 8%, 100% 0, 100% 22%, 71% 29%, 60% 51%, 61% 100%, 38% 100%, 37% 50%, 49% 21%);
+    clip-path: polygon(66% 8%, 100% 0, 100% 22%, 71% 29%, 60% 51%, 61% 100%, 38% 100%, 37% 50%, 48% 21%);
   }
   
   .handle-2::before {
@@ -239,11 +263,14 @@
   
 <!--   COFFEE CANS -->
   <div class="coffee">
+    <div class="coffee-highlight"></div>
     <div class="text">CAFE []<br>BUSTELO</div>
+    <div class="small-text">Espresso Ground Coffee</div>
     <div class="red-border"></div>
   </div>
   
    <div class="coffee-2">
+    <div class="coffee2-highlight"></div>
     <div class="text-2">C<br>B</div>
     <div class="red-border-2"></div>
   </div>
