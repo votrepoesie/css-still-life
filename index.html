@@ -185,6 +185,18 @@
     clip-path: polygon(50% 0%, 82% 0, 95% 44%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 6% 45%, 19% 0);
   }
   
+  .chrome-reflect {
+    height: 90px;
+    width: 180px;
+    background-image: linear-gradient(to right, hsl(0, 0%, 43%) 10%, hsl(0, 0%, 85%) 40%, hsl(0, 0%, 90%) 50%, grey 80%, hsl(0, 0%, 17%));
+    position: absolute;
+    z-index: 100;
+    transform: rotate(0.5turn) translate(-185px, 80px);
+    filter: brightness(1.5) blur(10px) opacity(50%);
+    clip-path: polygon(50% 0%, 82% 0, 95% 44%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 6% 45%, 19% 0);
+  }
+  
+  
   .handle-1 {
     height: 30px;
     width: 40px;
@@ -303,6 +315,7 @@
 <!--   THE POT -->
   <div class="pot"></div>
   <div class="chrome"></div>
+  <div class="chrome-reflect"></div>
   <div class="handle-1"></div>
   
   <div class="handle-2"></div>
